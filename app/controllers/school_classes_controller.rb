@@ -14,6 +14,7 @@ class SchoolClassesController < ApplicationController
   end
 
   def edit
+    school_class_find
   end
 
   def update
