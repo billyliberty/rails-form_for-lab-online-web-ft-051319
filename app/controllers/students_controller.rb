@@ -13,15 +13,15 @@ class StudentsController < ApplicationController
   end
 
   def show
-    @student = Student.find(params[:id])
+    student_find
   end
 
   def edit
-    @student = Student.find(params[:id])
+    student_find
   end
 
   def update
-    @student = Student.find(params[:id])
+    student_find
     @student.update(student_params)
     redirect_to student_path(@student)
   end
