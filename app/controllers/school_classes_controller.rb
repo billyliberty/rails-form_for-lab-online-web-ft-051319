@@ -18,4 +18,11 @@ class SchoolClassesController < ApplicationController
 
   def update
   end
+
+  private
+
+    def school_class_find
+      @school_class = SchoolClass.find(params[:id])
+    end
+    
 end
